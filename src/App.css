@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+.layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 500px) {
+  .layout {
+    display: flex;
+    flex-direction: column;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-layout {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.theme {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.theme-icon {
+  margin: 32px 32px 90px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 34px;
+  border-radius: 25px;
+}
+
+.theme-icon:hover {
+  cursor: pointer;
+}
+
+.theme-icon-light {
+  background: #f6f6f6;
+}
+
+.theme-icon-dark {
+  background: #262626;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+  margin-top: 347px;
+  margin-left: 214px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    margin-left: 126px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    margin-left: 60px;
+  }
+}
+
+.footer p {
+  color: #949494;
+  font-family: Acumin Pro;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.24px;
+}
+
+.footer p:hover {
+  cursor: pointer;
+}
+
+.dark-theme {
+  background: #131b15;
+}
+
+.login-form-position {
+  margin-left: 188px;
+}
+
+@media screen and (max-width: 1200px) {
+  .login-form-position {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .login-form-position {
+    margin-left: 0px;
   }
 }
