@@ -22,6 +22,7 @@
 .input {
   border: none;
   background-color: transparent;
+  font-family: Acumin Pro;
 }
 
 .input:focus {
@@ -62,11 +63,14 @@
   border: 1px solid #7d7d7d;
 }
 
+.eye:hover {
+  cursor: pointer;
+}
+
 .checkbox-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 135px;
   width: 364px;
   margin-bottom: 64px;
   height: 16px;
@@ -75,6 +79,10 @@
 .checkbox-items {
   display: flex;
   align-items: center;
+}
+
+.checkbox-items input {
+  margin-top: 0;
 }
 
 .checkbox-remember-me {

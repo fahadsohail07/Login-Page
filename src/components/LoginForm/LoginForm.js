@@ -108,9 +108,9 @@ const LoginForm = (props) => {
               }
             />
             {props.isDarkMode ? (
-              <EyeDarkMode onClick={togglePasswordVisibility} />
+              <EyeDarkMode onClick={togglePasswordVisibility} className="eye" />
             ) : (
-              <Eye onClick={togglePasswordVisibility} />
+              <Eye onClick={togglePasswordVisibility} className="eye"/>
             )}
           </div>
 
